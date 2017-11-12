@@ -1,5 +1,5 @@
 #include <stdlib.h>
 int main(){
-system("lspci");
+system("lspci -vmm | grep -w \'Vendor\\|Device\'");
 return 0;
 }
